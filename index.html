@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/icon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <title>main tetris</title>
+    </head>
+    <body>
+        <audio src="sounds/creepy.mp3" type="audio/mpeg" autoplay loop>
+        </audio>
+        <div class="grid">
+            <canvas id="board" class="gameBoard"></canvas>
+            <div class="rightColumn">
+                <div>
+                    <h1>tetris</h1>
+                    <p>score:<span id="score">0</span></p>
+                    <p>lines:<span id="lines">0</span></p>
+                    <p>level:<span id="level">0</span></p>
+                    <p>next:<span id="level"></span></p>
+                    <canvas id="next" class="next"></canvas>
+                </div>
+                <button onclick="play()" class="btn play">mulai</button>
+            </div>
+        </div>
+        <div class="rules">
+            <h2>Cara Main</h2>
+            <p>klik 'mulai' untuk memulai game</p>
+            <p>'ATAS' : merubah bentuk</p>
+            <p>'BAWAH' : menggeser ke bawah</p>
+            <p>'KIRI' : menggeser ke kiri</p>
+            <p>'KANAN' : menggeser ke kanan</p>
+            <p>'SPASI' : drop tetris</p>
+            <p>'ENTER' : permainan baru</p>
+            <p>'ESC' : keluar permainan</p>
+        </div>
+
+        <script type="text/javascript" src="config.js"></script>
+        <script type="text/javascript" src="board.js"></script>
+        <script type="text/javascript" src="piece.js"></script>
+        <script type="text/javascript" src="game.js"></script>
+
+    </body>
+</html>
